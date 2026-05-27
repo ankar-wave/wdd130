@@ -108,6 +108,7 @@ header {
     width: 120px;
     height: auto;
     border-radius: 4px;
+    float: right;
 
 }
 
@@ -210,6 +211,11 @@ footer p {
     gap: 12px;
     margin-left: auto;
 
+}
+
+.socialmedia a {
+    text-decoration: none;
+    display: inline-block;
 }
 
 .socialmedia img {
