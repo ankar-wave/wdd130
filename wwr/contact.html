@@ -27,7 +27,7 @@
     </header>
 
     <main>
-        <!-- Company Info Section -->
+        <h1>White Water Rafting Company</h1>
         <section class="company-info">
             <h2>White Water Rafting Company</h2>
             <p>123 Mai Mahiu Street<br>Nakuru, Kenya</p>
@@ -38,35 +38,51 @@
                   allowfullscreen="" loading="lazy"></iframe>
 
                 <form>
+                    <!-- Text input -->
                     <label for="username">Name:</label>
                     <input type="text" id="username" name="username" placeholder="Your name"
                       required>
 
+                    <!-- Email input -->
                     <label for="useremail">Email:</label>
                     <input type="email" id="useremail" name="useremail" placeholder="Your email"
                       required>
 
+                    <!-- Radio group -->
                     <label for="purpose">Message Purpose:</label>
                     <div class="radio-group">
-                        <label><input type="radio" name="purpose" value="general"> General
-                            Inquiry</label>
-                        <label><input type="radio" name="purpose" value="reservation"> Reservation
-                            Question</label>
-                        <label><input type="radio" name="purpose" value="suggestion"> Website
-                            Suggestion</label>
-
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="5"
-                          placeholder="Type your message here..."></textarea>
-
-                        <label>
-                            <input type="checkbox" name="newsletter"> Please subscribe me to the
-                            monthly
-                            newsletter
+                        <label for="purpose-general">
+                            <input type="radio" id="purpose-general" name="purpose" value="general">
+                            General Inquiry
                         </label>
+                        <label for="purpose-reservation">
+                            <input type="radio" id="purpose-reservation" name="purpose"
+                              value="reservation">
+                            Reservation Question
+                        </label>
+                        <label for="purpose-suggestion">
+                            <input type="radio" id="purpose-suggestion" name="purpose"
+                              value="suggestion"> Website
+                            Suggestion
+                        </label>
+                    </div>
 
-                        <button type="submit">Get in Touch!</button>
+                    <!-- Textarea -->
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5"
+                      placeholder="Type your message here..."></textarea>
+
+                    <!-- Checkbox -->
+                    <label for="newsletter" class="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter"> Please subscribe
+                        me to the monthly
+                        newsletter
+                    </label>
+
+                    <!-- Button -->
+                    <button type="submit">Get in Touch!</button>
                 </form>
+
             </div>
         </section>
 
