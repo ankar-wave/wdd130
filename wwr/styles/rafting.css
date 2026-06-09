@@ -18,6 +18,39 @@ header {
     height: auto;
 }
 
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 0%;
+    left: 30%;
+    color: rgb(253, 250, 251);
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
 .nav-links ul {
     display: flex;
     list-style: none;
@@ -35,6 +68,12 @@ header {
     text-decoration: none;
     color: #000;
     font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: rgb(30, 30, 245);
+    background-color: transparent;
+    transition: color 0.3s ease;
 }
 
 /* Contact Section */
@@ -136,23 +175,177 @@ form button:hover {
 }
 
 /* Team Section */
-.team {
-    text-align: center;
-    margin-top: 3rem;
-}
 
 .team-gallery {
     display: flex;
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
+    text-align: center;
+    padding: 2rem;
 }
 
-.team-gallery img {
-    width: 150px;
-    height: 150px;
+.team-member {
+    flex: 1 1 100px;
+    max-width: 100px;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.team-member figcaption {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Trip Gallery Section */
+.trip-gallery {
+    padding: 2rem;
+}
+
+.trip-heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #004466;
+    margin-bottom: 2rem;
+}
+
+.trip {
+    display: flex;
+    /* side by side layout */
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.trip-left {
+    flex: 0 0 250px;
+    /* fixed width for image+name */
+    text-align: center;
+}
+
+.trip-left img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.trip-left h3 {
+    margin-top: 0.75rem;
+    font-size: 1.25rem;
+    color: #004466;
+}
+
+.trip-right {
+    flex: 1;
+    /* description takes remaining space */
+    text-align: left;
+}
+
+.trip-right p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.trip-table th,
+.trip-table td {
+    border: 1px solid #999;
+    padding: 0.75rem;
+}
+
+.trip-table th {
+    background-color: #d6c8f5;
+    font-weight: bold;
+}
+
+.trip-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.offerings {
+    text-align: center;
+    padding: 2rem;
+}
+
+.image-overlay {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.image-overlay img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 5px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.overlay-text h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.overlay-text p {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.cta-trips {
+    text-align: center;
+    padding: 2rem;
+}
+
+.cta-trips p {
+    font-size: 1.1rem;
+    color: #000;
+    line-height: 1.6;
+}
+
+.cta-button {
+    background-color: #0044cc;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-left: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #006699;
+}
+
+.cta-button:hover {
+    background-color: #37c153;
 }
 
 /* Footer */
