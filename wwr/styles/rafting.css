@@ -372,3 +372,59 @@ footer p {
     width: 30px;
     height: 30px;
 }
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+
+    /* Hero section */
+    .hero {
+        height: auto;
+        /* let image scale naturally */
+    }
+
+    .hero-text {
+        font-size: 2rem;
+        left: 10%;
+        /* move text closer to left edge */
+    }
+
+    /* Navigation */
+    .nav-links ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Map + form */
+    .map-form-container {
+        flex-direction: column;
+    }
+
+    /* Form */
+    form {
+        grid-template-columns: 1fr;
+        /* single column */
+    }
+
+    form label {
+        grid-column: 1 / 2;
+    }
+
+    form textarea,
+    form input,
+    form select,
+    form button {
+        grid-column: 1 / 2;
+        width: 100%;
+    }
+
+    /* Trips */
+    .trip {
+        flex-direction: column;
+        /* stack image above text */
+    }
+
+    .trip-left {
+        flex: 1 1 auto;
+        max-width: 100%;
+    }
+}
